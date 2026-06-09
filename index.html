@@ -468,7 +468,7 @@
             <strong id="totalVenda">0 Solaris</strong>
           </div>
           <div class="total-row">
-            <span>Repasse ao Saloon 20%</span>
+            <span>Repasse ao Saloon 35%</span>
             <strong id="repasse">0 Solaris</strong>
           </div>
           <div class="total-row big">
@@ -525,7 +525,7 @@
             <strong id="notaTotal"></strong>
           </div>
           <div class="total-row">
-            <span>Repasse total ao Saloon 20%</span>
+            <span>Repasse total ao Saloon 35%</span>
             <strong id="notaRepasse"></strong>
           </div>
           <div class="total-row big">
@@ -628,7 +628,7 @@
 
     function calcularTotais(venda) {
       const total = venda.reduce((acc, item) => acc + item.subtotal, 0);
-      const repasse = total * 0.20;
+      const repasse = total * 0.35;
       const liquido = total - repasse;
       return { total, repasse, liquido };
     }
